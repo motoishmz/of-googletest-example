@@ -1,7 +1,7 @@
 
 
 # macOS
-tested with: `OF0.9.7`
+tested with: `OF0.9.7`  
 screen cast: https://vimeo.com/202735241
 
 ## googletest
@@ -18,5 +18,5 @@ screen cast: https://vimeo.com/202735241
 ```cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib "$TARGET_BUILD_DIR/libfmodex.dylib";
 install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME";```
 3. add the path to include folder of the googletest to your header search path e.g. `$(PROJECT_DIR)/../googletest/googletest/include`
-4. add open frameworks static library to your Build Phases > Link Binary with Libraries
-5. test your code
+4. add openframeworks static library to your Build Phases > Link Binary with Libraries
+5. add testcode
