@@ -4,7 +4,7 @@
 tested with: `OF0.9.7`  
 screen cast: https://vimeo.com/202735241
 
-## googletest
+### googletest
 1. clone googletest from https://github.com/google/googletest
 2. build static library
 	3. change LLVM settings on Build Setting for supporting C++11 
@@ -12,7 +12,7 @@ screen cast: https://vimeo.com/202735241
 	5. copy the static library to `/usr/local/lib`
 
 
-## openframeworks
+### openframeworks
 1. add new target as `Command Line Tool`
 2. add `Run Script` to Build Phase  
 ```cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib "$TARGET_BUILD_DIR/libfmodex.dylib";

@@ -18,7 +18,7 @@ public:
   argv(argv) {}
   
   virtual void setup() {
-    testing::InitGoogleTest(&argc, argv);
+    ::testing::InitGoogleTest(&argc, argv);
 #ifdef TARGET_OSX
     ofExit(RUN_ALL_TESTS());
 #endif
