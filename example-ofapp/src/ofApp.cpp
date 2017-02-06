@@ -1,4 +1,5 @@
 #include "ofMain.h"
+#include "MyInt.h"
 
 class ofApp : public ofBaseApp {
   
@@ -11,6 +12,9 @@ public:
     ofSetFrameRate(60);
     ofSetVerticalSync(true);
     
+    MyInt my_int(10);
+    cout << my_int.isEven() << endl;
+    cout << my_int.isOdd() << endl;
   }
   
   void update() {
