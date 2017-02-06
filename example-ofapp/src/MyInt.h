@@ -12,6 +12,7 @@ public:
   }
   
   bool isOdd() const {
+//    return num_ % 2 == 1;
     return isEven(); // <-- boom
   }
   
